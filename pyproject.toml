@@ -1,0 +1,22 @@
+[project]
+name = "marketpulse"
+version = "1.0.0"
+description = "Desktop market dashboard: 20 live markets, a fear-greed score, quantitative signals and an AI summary"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ian · Blue Peak AI & Finance Solutions" }]
+dependencies = ["PySide6>=6.6", "numpy>=1.26", "pandas>=2.1", "yfinance>=0.2.40", "anthropic>=0.70", "keyring>=24"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pyinstaller>=6"]
+
+[project.gui-scripts]
+marketpulse = "marketpulse.app:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["marketpulse"]
