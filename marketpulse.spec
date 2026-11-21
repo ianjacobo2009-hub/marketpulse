@@ -10,4 +10,4 @@ exe = EXE(pyz, a.scripts, [], exclude_binaries=True, name="Market Pulse", consol
 coll = COLLECT(exe, a.binaries, a.datas, name="Market Pulse")
 if sys.platform == "darwin":
     app = BUNDLE(coll, name="Market Pulse.app", icon=icon, bundle_identifier="com.bluepeak.marketpulse",
-                 info_plist={"CFBundleShortVersionString": "1.0.0", "NSHighResolutionCapable": True})
+                 info_plist={"CFBundleShortVersionString": "2.0.0", "NSHighResolutionCapable": True})

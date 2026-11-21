@@ -1,6 +1,6 @@
 [project]
 name = "marketpulse"
-version = "1.0.0"
+version = "2.0.0"
 description = "Desktop market dashboard: 20 live markets, a fear-greed score, quantitative signals and an AI summary"
 readme = "README.md"
 requires-python = ">=3.10"
